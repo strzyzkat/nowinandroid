@@ -184,12 +184,49 @@ class NiaAppScreenSizesScreenshotTests {
         )
     }
 
+
+    @Test
+    fun mediumWidth_mediumHeight_showsNavigationRail() {
+        testNiaAppScreenshotWithSize(
+            610.dp,
+            500.dp,
+            "mediumWidth_mediumHeight_showsNavigationRail",
+        )
+    }
+
+    @Test
+    fun expandedWidth_mediumHeight_showsNavigationRail() {
+        testNiaAppScreenshotWithSize(
+            900.dp,
+            500.dp,
+            "expandedWidth_mediumHeight_showsNavigationRail",
+        )
+    }
+
     @Test
     fun compactWidth_expandedHeight_showsNavigationBar() {
         testNiaAppScreenshotWithSize(
             400.dp,
             1000.dp,
             "compactWidth_expandedHeight_showsNavigationBar",
+        )
+    }
+
+    @Test
+    fun mediumWidth_expandedHeight_showsNavigationRail() {
+        testNiaAppScreenshotWithSize(
+            610.dp,
+            1000.dp,
+            "mediumWidth_expandedHeight_showsNavigationRail",
+        )
+    }
+
+    @Test
+    fun expandedWidth_expandedHeight_showsNavigationRail() {
+        testNiaAppScreenshotWithSize(
+            900.dp,
+            1000.dp,
+            "expandedWidth_expandedHeight_showsNavigationRail",
         )
     }
 }
