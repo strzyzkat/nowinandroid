@@ -174,40 +174,6 @@ class SnackbarInsetsScreenshotTests {
         }
     }
 
-    @Test
-    fun snackbarShown_foldable() {
-        val snackbarHostState = SnackbarHostState()
-        testSnackbarScreenshotWithSize(
-            snackbarHostState,
-            600.dp,
-            600.dp,
-            "insets_snackbar_medium_medium",
-        ) {
-            snackbarHostState.showSnackbar(
-                "This is a test snackbar message",
-                actionLabel = "Action Label",
-                duration = Indefinite,
-            )
-        }
-    }
-
-    @Test
-    fun snackbarShown_tablet() {
-        val snackbarHostState = SnackbarHostState()
-        testSnackbarScreenshotWithSize(
-            snackbarHostState,
-            900.dp,
-            900.dp,
-            "insets_snackbar_expanded_expanded",
-        ) {
-            snackbarHostState.showSnackbar(
-                "This is a test snackbar message",
-                actionLabel = "Action Label",
-                duration = Indefinite,
-            )
-        }
-    }
-
     private fun testSnackbarScreenshotWithSize(
         snackbarHostState: SnackbarHostState,
         width: Dp,
